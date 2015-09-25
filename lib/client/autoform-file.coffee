@@ -55,7 +55,7 @@ Template.afFileUpload.events
     collection = getCollection t.data
 
     file = new FS.File e.target.files[0]
-    if Meteor.userId
+    if Meteor.userId()
       file.owner = Meteor.userId()
 
     collection.insert file, (err, fileObj) ->
