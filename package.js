@@ -7,7 +7,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.2');
+  api.versionsFrom('METEOR@1.0');
 
   api.use([
     'coffeescript',
@@ -15,8 +15,8 @@ Package.onUse(function(api) {
     'reactive-var',
     'templating',
     'less',
-    'aldeed:autoform',
-    'fortawesome:fontawesome'
+    'aldeed:autoform@5.4.0',
+    'fortawesome:fontawesome@4.4.0'
   ]);
 
   api.addFiles('lib/client/autoform-file.html', 'client');
